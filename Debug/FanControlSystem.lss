@@ -5471,7 +5471,6 @@ int main()
     2410:	0f 92       	push	r0
     2412:	cd b7       	in	r28, 0x3d	; 61
     2414:	de b7       	in	r29, 0x3e	; 62
-	// just comment
 	uint8 temperature = 0;
     2416:	19 82       	std	Y+1, r1	; 0x01
 	DcMotor_Init();
@@ -5482,7 +5481,7 @@ int main()
     2420:	0e 94 83 11 	call	0x2306	; 0x2306 <app_Welcome>
 	while(1)
 	{
-		temperature = LM35_getTemperature();
+		temperature = LM35_getTemperature(); /* read current temperature */
     2424:	0e 94 b5 0b 	call	0x176a	; 0x176a <LM35_getTemperature>
     2428:	89 83       	std	Y+1, r24	; 0x01
 		lcd_Temprint(temperature);

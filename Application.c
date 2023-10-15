@@ -95,14 +95,13 @@ void fan(uint8 temperature)
 
 int main()
 {
-	// just comment
 	uint8 temperature = 0;
 	DcMotor_Init();
 	LCD_init();
 	app_Welcome();
 	while(1)
 	{
-		temperature = LM35_getTemperature();
+		temperature = LM35_getTemperature(); /* read current temperature */
 		lcd_Temprint(temperature);
 		fan(temperature);
 	}

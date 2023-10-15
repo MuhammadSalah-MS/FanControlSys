@@ -4,7 +4,7 @@
  *
  * File Name: dcmotor.c
  *
- * Description: DC Motor driver Header file
+ * Description: Header file for the DC Motor driver
  *
  * Author: Muhammad Salah Ahmed Hefny
  *
